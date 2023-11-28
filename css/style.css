@@ -2,13 +2,14 @@
 
 :root {
   /* colors */
-  --icon-colors: #8e7bef;
+  --color-primary: #8e7bef;
   --font-colors: #222222;
   --bg-section-color: #fcda68;
   --second-icon-colors: #423f40;
   --fonts-subsection-colors: #423f40;
   --bg-color: #ffffff;
   --bg-icon-color: #f9f5f2;
+  --color-third: #ABABAB;
 
   /* mobile */
   --font-title-mobile: 50px;
@@ -72,6 +73,7 @@ body {
   padding: 0;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  max-width: 1200px;
 }
 section {
   scroll-snap-align: start;
@@ -110,7 +112,7 @@ main {
 .links-nav-bar a:focus,
 .links-nav-bar a:hover,
 .links-nav-bar a:target {
-  color: var(--icon-colors);
+  color: var(--color-primary);
 }
 .nav-bar-btn {
   display: flex;
@@ -167,7 +169,7 @@ main {
   font-size: var(--font-subsection-mobile);
 }
 .highlight {
-  color: var(--icon-colors);
+  color: var(--color-primary);
 }
 
 .home-design-social-media {
@@ -177,7 +179,7 @@ main {
 }
 
 .home-design-social-media img {
-  background-color: var(--icon-colors);
+  background-color: var(--color-primary);
   border-radius: 50%;
   padding: 5px;
 }
@@ -187,7 +189,7 @@ main {
 }
 
 .home-btn-contact {
-  background-color: var(--icon-colors);
+  background-color: var(--color-primary);
   color: var(--bg-color);
   padding: 15px;
   width: 250px;
@@ -339,6 +341,64 @@ main {
   padding: 20px;
 }
 
+.portfolio-grid{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.portfolio-group-title{
+  color: var(--color-primary);
+  font-weight: var(--font-weight-desktop);
+}
+
+.portfolio-projects-group{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.portfolio-photo{
+  width: 90%; 
+  content: block;
+  }
+
+.contact-grid{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-photo{
+  border: 35px solid;
+  border-radius: 30px;
+  border-color: var(--bg-icon-color);
+}
+
+.contact-group{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-example-title{
+  padding-top: 7px;
+  font-size: var(--font-body-desktop);
+  font-weight: var(--font-weight-desktop);
+}
+
+.contact-data{
+  padding-top: 7px;
+  color: var(--color-third);
+}
+
+
+
+
 @media (min-width: 600px) {
   .navbar-class {
     position: static;
@@ -372,4 +432,6 @@ main {
   .nav-bar-btn {
     display: none;
   }
+
+  
 }
